@@ -251,3 +251,44 @@ run queries :
 ollama_model.py --------->  python ollama_model.py
 route.py ---------> uvicorn route:app --reload
 
+----------------------------------------------------------------------------------------------
+example queries we can try on model :
+
+Basic Join Questions
+"Get all ads along with their campaign name and objective."
+
+"Show ad name, campaign name, campaign objective, and ad status."
+
+"List all ads with their campaign effective status."
+
+"Fetch ads and their campaign start and stop dates."
+
+🔹 Filter-Based Questions
+"Get all ads under campaigns where objective = 'CONVERSIONS'."
+
+"Show ads where campaign effective_status = 'ACTIVE'."
+
+"List ads created after 2024-01-01 with campaign name."
+
+"Fetch ads for client_id = '12345' with campaign run_status = 'PENDING'."
+
+🔹 Aggregation Questions
+"Count number of ads per campaign."
+
+"Show campaign name and total ads under each campaign."
+
+"Find campaigns that have more than 10 ads."
+
+🔹 Advanced Join Questions
+"Get campaign name, ad name, and creative_id for all ads where campaign buying_type = 'AUCTION'."
+
+"Show campaigns that do not have any ads."
+(Requires LEFT JOIN)
+
+"List ads whose campaign is stopped."
+
+"Find latest updated ads with their campaign objective."
+
+
+
+
